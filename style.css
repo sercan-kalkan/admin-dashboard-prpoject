@@ -4,7 +4,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 0.5fr 4fr;
 }
 
@@ -153,10 +153,6 @@ ul li {
     align-content: flex-start;
 }
 
-.headers h2 {
-
-}
-
 .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -171,9 +167,6 @@ ul li {
     padding: 10px;
     font-size: 18px;
     width: 125px;
-}
-
-.main {
 }
 
 .mainArticle {
@@ -194,13 +187,68 @@ ul li {
     background-color: white;
     height: 250px;
     display: grid;
-    grid-template-columns: 10px 240px;
+    grid-template-columns: 10px 250px;
     column-gap: 15px;
     margin-left: 10px;
+    grid-template-rows: 50px 150px 50px;
 }
 
 .articleSide {
     background-color: rgb(227, 174, 50);
+    grid-row: 1 / 4;
+}
+
+.articleIcons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    width: 25px;
+    display: grid;
+    grid-template-columns:25px 25px 25px;
+    column-gap: 10px;
+    margin-left: 120px;
+}
+
+.rightSideBar {
+    grid-row: 1 / 3;
+    grid-column:2 ;
+    display: grid;
+    grid-template-rows: 50px 400px 50px 400px;
+    margin-left: 20px;
+    row-gap: 10px;
+
+}
+
+#annaouncements {
+    background-color: white;
+    display: grid;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#trending {
+    background-color: white;
+    display: grid;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.profiles {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(156, 156, 206);
+    border-radius: 100%;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 70px;
+    align-items: center;
 }
 
 
